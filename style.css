@@ -1,70 +1,98 @@
-html,
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.main-header {
-    background-color: rgba(0, 0, 0, .3);
-    padding-bottom: 10px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #111;
+    padding: 20px 0;
 }
 
 .title {
+    font-size: 2.5em;
     text-align: center;
-    margin: 0;
-    font-size: 8em;
-    font-family: "Helvetica";
-    font-weight: normal;
-    color: white;
 }
 
-#card-container {
+.controls {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls button {
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.card-container {
     display: flex;
-    justify-content: center;
-    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card {
     width: 300px;
-    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #1E1E1E;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .card-content {
     padding: 20px;
-    font-family: "Verdana";
-    color: #777;
-}
-
-.card-content h2 {
-    margin-top: 0;
-    font-size: 20px;
 }
 
 .card img {
     width: 100%;
     height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, .3);
-    padding: 10px;
+.show-info {
+    padding: 20px;
 }
 
-button {
+.show-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.show-info p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.buttons {
     text-align: center;
-    background-color: #666;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background-color: #1E90FF;
+    color: #fff;
     border: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 40px;
-    border-radius: 10px;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
+    padding: 10px 20px;
     margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
 }
